@@ -18,8 +18,6 @@ class StellenFactory extends Factory
             'beschreibung' => $this->faker->paragraph,
             'salary' => $this->faker->randomFloat(2, 1000, 10000),
             'standort' => $this->faker->city,
-            'category_id' => Categories::factory(),
-            'company_id' => Companies::factory(),
             'created_at' => now(),
             'updated_at' => now(),
         ];

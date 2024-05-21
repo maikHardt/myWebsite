@@ -12,7 +12,7 @@ class CompaniesTableSeeder extends Seeder
      */
     public function run(): void
     {
-        Companies::factory()->count(5)->create();
+        Companies::factory()->count(50)->create();
     
     }
 }

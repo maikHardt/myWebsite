@@ -12,6 +12,6 @@ class CategoriesTableSeeder extends Seeder
      */
     public function run(): void
     {
-        Categories::factory()->count(5)->create(); 
+        Categories::factory()->count(25)->create(); 
     }
 }

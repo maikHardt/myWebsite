@@ -25,13 +25,13 @@
                 @foreach ($stellen as $stelle)
                     <tr>
                         <div style="width: max-content; height: max-content">
-                        <td style="padding-left: 10px; height: 30px; border: 1px solid black">{{ $stelle->id }}</td>
-                        <td style="padding-left: 10px; height: 30px; border: 1px solid black">{{ $stelle->bezeichnung }}</td>
-                        <td style="padding-left: 10px; height: 30px; border: 1px solid black">{{ $stelle->beschreibung }}</td>
-                        <td style="padding-left: 10px; height: 30px; border: 1px solid black">{{ $stelle->salary }}</td>
-                        <td style="padding-left: 10px; height: 30px; border: 1px solid black">{{ $stelle->standort }}</td> 
-                        <td style="padding-left: 10px; height: 30px; border: 1px solid black">{{ $stelle->category_id}}</td>
-                        <td style="padding-left: 10px; height: 30px; border: 1px solid black">{{ $stelle->company_id}}</td>                        
+                            <td style="text-align: center; vertical-align: middle; padding: 5px; height: 30px; border: 1px solid black">{{ $stelle->id }}</td>
+                            <td style="text-align: center; vertical-align: middle; padding: 5px; height: 30px; border: 1px solid black">{{ $stelle->bezeichnung }}</td>
+                            <td style="vertical-align: middle;padding: 5px; height: 30px; border: 1px solid black">{{ $stelle->beschreibung }}</td>
+                            <td style="text-align: center; vertical-align: middle; padding: 5px; height: 30px; border: 1px solid black">{{ $stelle->salary }}</td>
+                            <td style="text-align: center; vertical-align: middle; padding: 5px; height: 30px; border: 1px solid black">{{ $stelle->standort }}</td>
+                            {{-- <td style="text-align: center; vertical-align: middle; padding: 5px; height: 30px; border: 1px solid black">{{ $stelle->category_id}}</td> --}}
+                            {{-- <td style="text-align: center; vertical-align: middle; padding: 5px; height: 30px; border: 1px solid black">{{ $stelle->company_id}}</td> --}}                    
                         
 
                         {{--Company und Category der jeweiligen Stelle anzeigen lassen hat leider nicht funktioniert :/ --}}

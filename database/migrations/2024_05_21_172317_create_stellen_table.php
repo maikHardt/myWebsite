@@ -17,8 +17,6 @@ return new class extends Migration
             $table->text('beschreibung');
             $table->decimal('salary', 10, 2); // Anpassung der Länge und Präzision
             $table->string('standort');
-            $table->unsignedBigInteger('category_id');
-            $table->unsignedBigInteger('company_id');
 
             $table->foreign('category_id')->references('id')->on('categories')->onDelete('cascade');
             $table->foreign('company_id')->references('id')->on('companies')->onDelete('cascade');

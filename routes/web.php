@@ -12,7 +12,7 @@ Route::get('/stellenliste', function () {
 });
 
 Route::get('/stellendetail', function () {
-    $stellen = Stellen::with(['categories', 'companies'])->get();
+    $stellen = Stellen::with(['category', 'company'])->get();
     return view('Stellen/detail', ['stellen' => $stellen]);
 });
 
